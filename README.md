@@ -1,6 +1,7 @@
 # Databricks Runtime `{renv}` Lockfiles
 
-> \[!WARNING\] This repository is highly experimental, extensive testing hasn't been undertaken. It's recommended you only use the contents of the repository if you are experienced with package management in R.
+> [!WARNING]
+> This repository is highly experimental, extensive testing hasn't been undertaken. It's recommended you only use the contents of the repository if you are experienced with package management in R.
 
 A collection of ready-to-use `{renv}` environments that aims to mirror Databricks Runtime releases that pins the R version, CRAN snapshot, and included packages. This project does not aim to be a 1:1 copy of the R environment on Databricks, but to simplify development of workloads.
 
@@ -59,4 +60,4 @@ build_dbr_renv_snapshot(spec, target_dir = "envs")
 
 The script can also regenerate every supported runtime in one go (see the code at the bottom of `scripts/generate.R`), which keeps `envs/` in sync whenever Databricks publishes a new release.
 
-> \[!IMPORTANT\] Some manual changes may be required to ensure things work as intended. For example, `{sparklyr}` was upgraded within DBR 17+ after it's release, and the version specified is not available in specified snapshot.
+> [!IMPORTANT] Some manual changes may be required to ensure things work as intended. For example, `{sparklyr}` was upgraded within DBR 17+ after it's release, > and the version specified is not available in specified snapshot.
