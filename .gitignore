@@ -47,3 +47,7 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Databricks runtime environments: keep lockfiles only
+envs/*
+!envs/*/renv.lock
