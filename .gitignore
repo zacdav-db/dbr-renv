@@ -49,5 +49,7 @@ po/*~
 rsconnect/
 
 # Databricks runtime environments: keep lockfiles only
+envs/*
+!envs/*/
 envs/*/**
 !envs/*/renv.lock
