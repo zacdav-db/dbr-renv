@@ -60,4 +60,5 @@ build_dbr_renv_snapshot(spec, target_dir = "envs")
 
 The script can also regenerate every supported runtime in one go (see the code at the bottom of `scripts/generate.R`), which keeps `envs/` in sync whenever Databricks publishes a new release.
 
-> [!IMPORTANT] Some manual changes may be required to ensure things work as intended. For example, `{sparklyr}` was upgraded within DBR 17+ after it's release, > and the version specified is not available in specified snapshot.
+> [!IMPORTANT] Some manual changes may be required to ensure things work as intended. For example, `{sparklyr}` was upgraded within DBR 17+ after it's release
+> and the version specified is not available in specified snapshot.
